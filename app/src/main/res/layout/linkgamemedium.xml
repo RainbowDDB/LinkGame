@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ffffff">
+
+    <GridView
+        android:id="@+id/gridView_2"
+        android:layout_width="360dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/imageView_2"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:numColumns="6" />
+
+    <ImageView
+        android:id="@+id/imageView_2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/glory" />
+
+
+    <TextView
+        android:id="@+id/textView_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chronometer_2"
+        android:layout_alignBottom="@+id/chronometer_2"
+        android:layout_toLeftOf="@+id/chronometer_2"
+        android:layout_toStartOf="@+id/chronometer_2"
+        android:text="@string/timetaking"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Chronometer
+        android:id="@+id/chronometer_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/saveButton_2"
+        android:layout_alignBottom="@+id/saveButton_2"
+        android:layout_alignEnd="@+id/gridView_2"
+        android:layout_alignRight="@+id/gridView_2"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/saveButton_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_toLeftOf="@+id/textView_2"
+        android:layout_toStartOf="@+id/textView_2"
+        android:text="@string/save" />
+
+</RelativeLayout>

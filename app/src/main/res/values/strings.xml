@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">王者荣耀</string>
+    <string name="timetaking">花费时间：</string>
+    <string name="save">返回</string>
+    <string name="start">开始游戏</string>
+    <string name="finish">退出游戏</string>
+    <string name="heading">连 连 看</string>
+    <string name="continueGame">继续游戏</string>
+</resources>

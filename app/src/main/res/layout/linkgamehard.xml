@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ffffff">
+
+    <GridView
+        android:id="@+id/gridView_3"
+        android:layout_width="wrap_content"
+        android:layout_height="480dp"
+        android:layout_below="@+id/imageView_3"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:numColumns="8" />
+
+    <ImageView
+        android:id="@+id/imageView_3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/glory" />
+
+
+    <TextView
+        android:id="@+id/textView_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_toEndOf="@+id/saveButton_3"
+        android:layout_toRightOf="@+id/saveButton_3"
+        android:text="@string/timetaking"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Chronometer
+        android:id="@+id/chronometer_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/textView_3"
+        android:layout_alignBottom="@+id/textView_3"
+        android:layout_toEndOf="@+id/textView_3"
+        android:layout_toRightOf="@+id/textView_3"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/saveButton_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/textView_3"
+        android:layout_alignBottom="@+id/textView_3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:text="@string/save" />
+
+</RelativeLayout>
